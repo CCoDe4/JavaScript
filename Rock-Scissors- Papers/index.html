@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <h2> Your choice: </h2>
+
+    <main class="flex-center">
+    <div class="col-lg-3 col-sm-3 text-center"; id="rockImage">
+        <img class="img-circle img-responsive img-center" src="images/Rock.png" width="200" height="200" alt="" onclick="playerChoice=0; changeImage();">
+
+    </div>
+
+    <div class="col-lg-3 col-sm-3 text-center"; id="paperImage">
+        <img class="img-circle img-responsive img-center" src="images/Paper.png" width="200" height="200" alt="" onclick="playerChoice=1; changeImage();" >
+
+    </div>
+
+     <div class="col-lg-3 col-sm-3 text-center"; id="scissorsImage">
+        <img class="img-circle img-responsive img-center" src="images/scissors.png" width="200" height="200" alt="" onclick="playerChoice=2; changeImage();" >
+     </div>
+
+    </main>
+
+    <form action="app.js" target="_blanc">
+        <fieldset disabled>
+        Your score: <input type="text" id="userScoreField" value=0><br>
+            <br>
+        </fieldset>
+        <button type="button" id = "nextRoundButton" onclick="nextRound()">Next Round </button>
+    </form>
+    <h2>PC choice:  </h2>
+    <div class="col-lg-3 col-sm-3 text-center">
+
+        <img id="questionImage" class="img-circle img-center" src="images/Question.jpg" width="200" height="200" alt="" >
+
+    </div>
+    <form action="app.js" target="_blanc">
+        <fieldset disabled>
+            PC score: <input type="text" id="pcScoreField" value=0><br>
+        </fieldset>
+    </form>
+        <script src='app.js'></script>
+    </body>
+</html>
